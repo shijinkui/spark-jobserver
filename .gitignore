@@ -12,3 +12,4 @@ test-reports/
 config/*.conf
 config/*.sh
 metastore_db/
+.idea

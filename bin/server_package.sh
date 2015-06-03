@@ -35,6 +35,7 @@ fi
 echo Packaging job-server for environment $ENV...
 
 cd $(dirname $0)/..
+echo "sbt ++$SCALA_VERSION job-server-extras/assembly"
 sbt ++$SCALA_VERSION job-server-extras/assembly
 if [ "$?" != "0" ]; then
   echo "Assembly failed"
